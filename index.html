@@ -1,0 +1,63 @@
+<!doctype>
+    <html>
+        <head>
+            <title>CamanJs in Javascript API</title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+            <style>
+                body
+                {
+                    width: 100%;
+                }
+                #canvas 
+                {
+                    background: grey;
+                    width: 500px;
+                    height: 500px;
+                    display: flex;
+                    margin: 50px auto;
+                    /*margin-bottom: 20px;*/
+                }
+                .label 
+                {
+                    font-size: 30px;
+                    margin-right: 30px;
+                }
+            </style>
+        </head>
+        <body onload="demo();">
+            <h1 class="title">Image Filter Using CamanJs</h1>
+            <form>
+                 <canvas id="canvas"></canvas><br>
+                <label class="label">Select Images:</label>
+                <input type="file" id="upload" class="upload">
+            </form>
+
+            <div>
+                <h2>Filters Images</h2>
+                <h3>Brightness</h3>
+                <button class="filter-btn increase_bright">Increase + </button>
+                <button class="filter-btn decrease_bright">Decrease - </button>
+
+                <h3>Contrast</h3>
+                <button class="filter-btn increase_contrast">Increase + </button>
+                <button class="filter-btn decrease_contrast">Decrease - </button>
+
+                 <h3>Saturation</h3>
+                <button class="filter-btn increase_saturation">Increase + </button>
+                <button class="filter-btn decrease_saturation">Decrease - </button>
+            </div>
+              <h2>Effects</h2>
+            <div>
+              
+                <button class="filter-btn vintage">Vintage</button>
+                <button class="filter-btn lomo">Lomo</button>
+                <button class="filter-btn clarity">Clarity</button>
+
+                
+                <!-- <button class="filter-btn Vintage">Vintage</button> -->
+            </div><br><br>
+
+            <button id="removeBtn">Remover Filters in Images</button>
+            <script type="text/javascript" src="./demo.js"></script>
+        </body>
+    </html>
